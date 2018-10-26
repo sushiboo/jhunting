@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvNpcInfoHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:textSize="30dp"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/npc_info_headerTxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <View style="@style/Divider"
+            android:id="@+id/dvNpcInfoHeader"
+            app:layout_constraintBottom_toBottomOf="@id/tvNpcInfoHeader"
+            app:layout_constraintEnd_toEndOf="@id/tvNpcInfoHeader"
+            android:layout_width="match_parent"/>
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/nameTxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dvNpcInfoHeader"/>
+
+        <TextView
+            android:id="@+id/tvNpcInfoName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nameTxt"
+            android:textColor="@color/colorGreen"
+            app:layout_constraintStart_toEndOf="@id/textView23"
+            app:layout_constraintTop_toTopOf="@id/textView23"/>
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/emailTxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNpcInfoName"
+            />
+
+        <TextView
+            android:id="@+id/tvNpcInfoEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/emailTxt"
+            android:textColor="@color/colorGreen"
+            app:layout_constraintStart_toEndOf="@id/textView24"
+            app:layout_constraintTop_toTopOf="@id/textView24"
+            />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/telephoneTxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNpcInfoEmail"/>
+
+        <TextView
+            android:id="@+id/tvNpcInfoTelephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/telephoneTxt"
+            android:textColor="@color/colorGreen"
+            app:layout_constraintStart_toEndOf="@id/textView25"
+            app:layout_constraintTop_toTopOf="@id/textView25"/>
+
+        <TextView
+            android:id="@+id/tvNpcInfoTrustStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/trustworthTxt"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            app:layout_constraintTop_toBottomOf="@id/tvNpcInfoEmail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/trustLvlTxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNpcInfoTrustStatus"/>
+
+        <TextView
+            android:id="@+id/tvNpcInfoTrustLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/trustLvlTxt"
+            android:textColor="@color/colorGreen"
+            app:layout_constraintStart_toEndOf="@id/textView26"
+            app:layout_constraintTop_toTopOf="@id/textView26"/>
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/trustExpTxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNpcInfoTrustLevel"/>
+
+        <TextView
+            android:id="@+id/tvNpcInfoTrustExp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/trustExpTxt"
+            android:textColor="@color/colorGreen"
+            app:layout_constraintStart_toEndOf="@id/textView27"
+            app:layout_constraintTop_toTopOf="@id/textView27"/>
+
+        <View style="@style/Divider"
+            android:id="@+id/dvNpcInfoTrustExp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toBottomOf="@id/tvNpcInfoTrustExp"
+            app:layout_constraintEnd_toEndOf="@id/tvNpcInfoTrustExp"
+            android:layout_width="match_parent"/>
+
+        <Button
+            android:id="@+id/btnNpcInfoCancel"
+            android:layout_marginTop="20dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cancelTxt"
+            android:background="@color/colorGreen"
+            android:textColor="@color/colorWhite"
+            tools:layout_editor_absoluteX="112dp"
+            tools:layout_editor_absoluteY="12dp"
+            app:layout_constraintTop_toBottomOf="@id/tvNpcInfoTrustExp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+</ScrollView>

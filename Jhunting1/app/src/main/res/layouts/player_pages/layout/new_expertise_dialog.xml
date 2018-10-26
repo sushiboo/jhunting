@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/addExpertiseTxt"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <View style="@style/Divider"
+            android:id="@+id/dvTextView48"
+            app:layout_constraintBottom_toBottomOf="@id/textView48"
+            app:layout_constraintEnd_toEndOf="@id/textView48"
+            android:layout_width="match_parent"/>
+
+        <TextView
+            android:id="@+id/textView49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/currentExpertiseTxt"
+            android:textSize="15sp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintTop_toBottomOf="@id/dvTextView48"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <View style="@style/Divider"
+            android:id="@+id/dvTextView49"
+            app:layout_constraintBottom_toBottomOf="@id/textView49"
+            app:layout_constraintEnd_toEndOf="@id/textView49"
+            android:layout_width="match_parent"/>
+
+        <ListView
+            android:id="@+id/lstProfileAddExpert"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/dvTextView49"/>
+
+        <View style="@style/Divider"
+            android:id="@+id/dvListPlayerProfileAddExpertise"
+            app:layout_constraintBottom_toBottomOf="@id/lstProfileAddExpert"
+            app:layout_constraintEnd_toEndOf="@id/lstProfileAddExpert"
+            android:layout_width="match_parent"/>
+
+        <TextView
+            android:id="@+id/textView50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/selectExpertiseTxt"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dvListPlayerProfileAddExpertise"/>
+
+        <Spinner
+            android:id="@+id/spnPlayerProfileAddExpertise"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/expertise"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView50"/>
+
+        <Button
+            android:id="@+id/btnPlayerProfileDialogAddExpertise"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="@string/addTxt"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"
+            tools:layout_editor_absoluteX="112dp"
+            tools:layout_editor_absoluteY="12dp"
+            app:layout_constraintTop_toTopOf="@id/spnPlayerProfileAddExpertise"
+            app:layout_constraintBottom_toBottomOf="@+id/spnPlayerProfileAddExpertise"
+            app:layout_constraintStart_toEndOf="@id/spnPlayerProfileAddExpertise"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <Button
+            android:id="@+id/btnPlayerProfileDialogFinished"
+            android:layout_marginTop="20dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:text="@string/finishedUpdateTxt"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"
+            tools:layout_editor_absoluteX="112dp"
+            tools:layout_editor_absoluteY="12dp"
+            app:layout_constraintTop_toBottomOf="@id/spnPlayerProfileAddExpertise"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <Button
+            android:id="@+id/btnPlayerProfileDialogCancelExpertise"
+            android:layout_marginTop="20dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/cancelTxt"
+            android:background="@color/colorGreen"
+            android:textColor="@color/colorWhite"
+            tools:layout_editor_absoluteX="112dp"
+            tools:layout_editor_absoluteY="12dp"
+            app:layout_constraintTop_toBottomOf="@id/spnPlayerProfileAddExpertise"
+            app:layout_constraintStart_toEndOf="@id/btnPlayerProfileDialogFinished"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
+
+
+

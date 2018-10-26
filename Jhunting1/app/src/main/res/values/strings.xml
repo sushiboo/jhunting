@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">Jhunting1</string>
+    <string name="usernameTxt">Username</string>
+    <string name="passwordTxt">Password</string>
+    <string name="oldPasswordTxt">Old Password</string>
+    <string name="newPasswordTxt">New Password</string>
+    <string name="loginTxt">Login</string>
+    <string name="registerTxt">Register</string>
+    <string name="roleTxt">Role</string>
+    <string name="searchTxt">Search</string>
+    <string name="nameTxt">Name</string>
+    <string name="emailTxt">Email</string>
+    <string name="telephoneTxt">Telephone</string>
+    <string name="expertiseTxt">Expertise</string>
+    <string name="selectExpertiseTxt">Select Expertise</string>
+    <string name="trustworthTxt">Trust Status</string>
+    <string name="trustLvlTxt">Trust Level</string>
+    <string name="cancelTxt">Cancel</string>
+    <string name="editTxt">Edit Info</string>
+    <string name="updateTxt">Update</string>
+    <string name="finishedUpdateTxt">Finished Updating</string>
+    <string name="addJobTxt">Add Job</string>
+    <string name="addTxt">Add</string>
+    <string name="newJobTxt">New Job</string>
+    <string name="trustExpTxt">Trust Exp points</string>
+    <string name="jobTitleTxt">Job Title</string>
+    <string name="applyTxt">Apply Job</string>
+    <string name="job_info_headerTxt">Job Information</string>
+    <string name="npc_info_headerTxt">NPC Information</string>
+    <string name="pointsTxt">Points</string>
+    <string name="levelTxt">Level</string>
+    <string name="yesTxt">Yes</string>
+    <string name="noTxt">No</string>
+    <string name="editJobTxt">Edit Job</string>
+    <string name="playerInfoTxt">Player Information</string>
+    <string name="viewTypeTxt">View Type</string>
+    <string name="applicationViewTxt">View Applications</string>
+    <string name="giveFeedbackTxt">Give Feedback</string>
+    <string name="goodFeedbackTxt">Good</string>
+    <string name="satisfactoryFeedbackTxt">Satisfactory</string>
+    <string name="notbadFeedbackTxt">Not Bad</string>
+    <string name="addExpertiseTxt">Add Expertise</string>
+    <string name="currentExpertiseTxt">Current Expertise</string>
+    <string name="jobAddConfirmTxt">Are you sure you want to Add this job?</string>
+    <string name="jobUpdateConfirmTxt">Are you sure you want to Update this job?</string>
+    <string name="jobDeleteConfirmTxt">Are you sure you want to Delete this job?</string>
+    <string name="jobApplyConfirmTxt">Are you sure you want to apply?</string>
+    <string name="addExpertiseConfirmTxt">Are you sure you want to Add this expertise?</string>
+    <string name="deleteExpertiseConfirmTxt">Are you sure you want to delete this expertise?</string>
+    <string name="updatePlayerConfirmTxt">Are you sure you want to update this player?</string>
+    <string name="updateNPCConfirmTxt">Are you sure you want to update this NPC?</string>
+    <string name="acceptApplicationConfirmTxt">Are you sure you want to Accept?</string>
+    <string name="rejectApplicationConfirmTxt">Are you sure you want to Reject?</string>
+    <string name="turnInApplicationConfirmTxt">Are you sure you want to Turn in?</string>
+    <string name="deleteApplicationConfirmTxt">Are you sure you want to Delete this application?</string>
+    <string name="giveFeedbackConfirmTxt">Are you sure you want to give this feedback?</string>
+    <string name="requestPlayerConfirmTxt">Are you sure you want to request this player?</string>
+
+
+    <string name="jobDescritpionTxt">Job Description</string>
+    <string name="txtContractDuration">Contract Duration in Days</string>
+
+    <string-array name="roles">
+        <item>Select Role</item>
+        <item>Player</item>
+        <item>NPC</item>
+    </string-array>
+
+    <string-array name="expertise">
+        <item>Select Expertise</item>
+    </string-array>
+
+    <string-array name="JobsArray">
+        <item>ALL JOBS</item>
+    </string-array>
+
+    <string-array name="StatusTypesPlayer">
+        <item>AWAITING APPROVAL</item>
+        <item>ON PROGRESS</item>
+        <item>REJECTED</item>
+        <item>COMPLETED</item>
+        <item>AWAITING FEEDBACK</item>
+        <item>REQUESTED</item>
+    </string-array>
+
+    <string-array name="StatusTypesNPC">
+        <item>AWAITING APPROVAL</item>
+        <item>ON PROGRESS</item>
+        <item>REJECTED</item>
+        <item>COMPLETED</item>
+        <item>AWAITING FEEDBACK</item>
+    </string-array>
+
+    <string-array name="jobCategory">
+        <item>Select Category</item>
+        <item>Construction</item>
+        <item>Programmer</item>
+        <item>Paramedic</item>
+        <item>Accountant</item>
+        <item>Hair Stylist</item>
+        <item>Accountant</item>
+    </string-array>
+</resources>

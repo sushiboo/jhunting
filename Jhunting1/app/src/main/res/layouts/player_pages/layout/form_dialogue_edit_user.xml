@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:nestedScrollingEnabled="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:textSize="30dp"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/editTxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <View style="@style/Divider"
+            android:id="@+id/dvTexView30"
+            app:layout_constraintBottom_toBottomOf="@id/textView30"
+            app:layout_constraintEnd_toEndOf="@id/textView30"
+            android:layout_width="match_parent"/>
+
+        <TextView
+            android:id="@+id/textView17"
+            app:layout_goneMarginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/nameTxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dvTexView30"/>
+
+        <EditText
+            android:id="@+id/txtEditUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:ems="10"
+            android:hint="@string/nameTxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/telephoneTxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="1dp"
+            app:layout_constraintTop_toBottomOf="@id/txtEditUserName"/>
+
+        <EditText
+            android:id="@+id/txtEditUserTelephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:ems="10"
+            android:hint="@string/telephoneTxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/emailTxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="1dp"
+            app:layout_constraintTop_toBottomOf="@id/txtEditUserTelephone"/>
+
+        <EditText
+            android:id="@+id/txtEditUserEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:ems="10"
+            android:hint="@string/emailTxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/passwordTxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="1dp"
+            app:layout_constraintTop_toBottomOf="@id/txtEditUserEmail"/>
+
+        <EditText
+            android:id="@+id/txtEditUserOldPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="@string/oldPasswordTxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+        <EditText
+            android:id="@+id/txtEditUserNewPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="@string/newPasswordTxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtEditUserOldPassword" />
+
+
+
+        <Button
+            android:id="@+id/btnUserUpdate"
+            android:layout_marginTop="10dp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/updateTxt"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"
+            tools:layout_editor_absoluteX="112dp"
+            tools:layout_editor_absoluteY="12dp"
+            app:layout_constraintTop_toBottomOf="@id/txtEditUserNewPassword"
+            app:layout_constraintStart_toStartOf="@id/txtEditUserNewPassword"
+            />
+
+        <Button
+            android:id="@+id/btnUserCancel"
+            android:layout_marginTop="10dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cancelTxt"
+            android:background="@color/colorGreen"
+            android:textColor="@color/colorWhite"
+            tools:layout_editor_absoluteX="112dp"
+            tools:layout_editor_absoluteY="12dp"
+            app:layout_constraintTop_toBottomOf="@id/txtEditUserNewPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnUserUpdate"
+            />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
